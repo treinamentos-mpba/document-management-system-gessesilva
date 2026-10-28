@@ -8,6 +8,7 @@ backend/storage/*
 # Build do frontend
 frontend/dist/
 frontend/build/
+frontend/coverage/
 
 # Logs e temporários
 *.log
