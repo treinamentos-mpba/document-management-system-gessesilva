@@ -25,7 +25,11 @@ const storage = multer.diskStorage({
 });
 const upload = multer({
   storage,
-  limits: { fileSize: maximumFileSize },
+  limits: {
+    fileSize: maximumFileSize,
+    fields: 0,
+    parts: 2,
+  },
 });
 
 const documentRepository = createDocumentRepository();
